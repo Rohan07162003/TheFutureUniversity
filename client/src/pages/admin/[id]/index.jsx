@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import Perks from "@/components/Perks";
 
 const AdminFormPage = () => {
-    const { id } = useParams();
+    const { id } = useParams() || {};
     const router = useRouter();
     const [jobtitle, setjobTitle] = useState('');
     const [joblocation, setjobLocation] = useState('');

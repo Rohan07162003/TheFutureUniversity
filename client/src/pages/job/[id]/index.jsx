@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { useParams } from "next/navigation";
 import AddressLink from "@/components/AddressLink";
 export default function JobPage() {
-    const { id } = useParams();
+    const { id } = useParams() || {};
     const router = useRouter();
     const [job, setJob] = useState(null);
 
